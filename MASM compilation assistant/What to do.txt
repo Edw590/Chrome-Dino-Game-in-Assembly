@@ -1,0 +1,1 @@
+Put somewhere in the PATH, like in C:\Windows.

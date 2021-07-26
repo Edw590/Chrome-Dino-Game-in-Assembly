@@ -1,0 +1,1 @@
+If you use DOSBox 0.71 as I did, put this in its main folder. I think the file was made ready to use with the game, so I'm sharing it too.

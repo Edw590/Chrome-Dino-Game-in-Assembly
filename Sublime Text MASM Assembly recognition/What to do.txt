@@ -1,0 +1,1 @@
+Extract the ZIP to Sublime Text/Data/Packages.

@@ -1,0 +1,4 @@
+Put the files in Sublime Text/Data/Packages.
+
+Note: EMU8086 only works with ASM and EXE files, not COM files.
+Note 2: read all the files. I think I use DOSBox 0.71 folder specifically on them. You might want to change them to whatever version you're using.
