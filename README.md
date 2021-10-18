@@ -1,9 +1,8 @@
 # Chrome Dino Game in Assembly
 
 ## Pictures
-![alt text](https://github.com/DADi590/Chrome-Dino-Game-in-Assembly/blob/master/Main_menu.png?raw=true)
-
-![alt text](https://github.com/DADi590/Chrome-Dino-Game-in-Assembly/blob/master/In-game.png?raw=true)
+![alt text](Main_menu.png)
+![alt text](In-game.png)
 
 PS:
 - Iniciar jogo == Start game
