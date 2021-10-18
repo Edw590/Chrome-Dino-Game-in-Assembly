@@ -1,5 +1,15 @@
 # Chrome Dino Game in Assembly
 
+## Pictures
+![alt text](https://github.com/DADi590/Chrome-Dino-Game-in-Assembly/blob/master/Main_menu.png?raw=true)
+
+![alt text](https://github.com/DADi590/Chrome-Dino-Game-in-Assembly/blob/master/In-game.png?raw=true)
+
+PS:
+- Iniciar jogo == Start game
+- Sair == Exit
+- Pontos == Points
+
 ## Introduction
 This is a project for the Computer Architecture subject in the course of Electrical and Computer Engineering, coded in 2020.
 
