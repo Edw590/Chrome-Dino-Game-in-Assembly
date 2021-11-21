@@ -13,13 +13,13 @@ PS:
 This is a project for the Computer Architecture subject in the course of Electrical and Computer Engineering, coded in 2020.
 
 It's the Google Chrome's Dino Game, but coded for the Intel 8086 processor, 100% in Assembly. Game I'm talking about: https://chromedino.com/.
-It's not perfect, but I think it's pretty cool xD. Was very cool to make too haha. It has sound and plays I want to break free from Queen while you play. To play it, use DOSBox (use the settings file I provide if you'd want), and just run it normally like any other program or game.
+It's not perfect, but I think it's pretty cool xD. Was very cool to make too haha. It has sound and plays I want to break free from Queen while you play. To play it, use DOSBox (use the settings file I provide if you'd want), and just run it normally like any other program or game. PS: it also tries to simulate gravity when the dinossaur jumps.
 
 By the way, the "dinossaur" in the game is just the head because it would give too much work to draw it in more resolution in the graphics mode. So we chose to go for the text mode and draw only its head (Pac-man? No. Dino-man 😂).
 
 Hope it's not too much Alien Language to be understandable haha. Also, it was in Portuguese, so I translated it to English. Hopefully I translated everything right.
 
-Hope anyone that sees this likes it haha. Might help someone giving some ideas too! If you have any questions, just throw an Issue or a Discussion or something.
+Hope anyone that sees this likes it haha. Might help someone by giving some ideas too! If you have any questions, just throw an Issue or a Discussion or something.
 
 I'll also provide:
  - Already compiled binaries on a release;
