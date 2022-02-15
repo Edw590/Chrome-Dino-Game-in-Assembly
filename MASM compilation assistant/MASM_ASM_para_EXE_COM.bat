@@ -53,7 +53,7 @@ IF "%continue%"=="1" (
 	ECHO:
 	REM IF it's to enable this again - read the note below -, use the option AT on ML.EXE to generate a COM file
 	REM C:\MASM615\BIN\ML.EXE /Fl /Fm /FR /Sf /Sc /Zd /Zf /Zi /Zm "%PATH_AND_FILE_NAME%" /link /information
-	C:\MASM615\BIN\ml_9.00.21022.08_x86.EXE /omf /Fl /Fm /FR /Sf /Zd /Zf /Zi /Zm "%BASE_NAME_FILE%.asm"
+	C:\MASM615\BIN\ml_9.00.21022.08_x86.EXE /omf /Fl /Fm /FR /errorReport:send /Sf /W3 /WX /Zd /Zf /Zi /Zm "%BASE_NAME_FILE%.asm"
 	
 	REM mkdir "%PATH%\%BASE_NAME_FILE%\"
 	
