@@ -53,7 +53,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	DRAW_DATA_DINO_ORIGINAL db 12, 0, 21, 02, 00001100b, "#", 07
 	DRAW_DATA_DINOSSAUR db 12, 0, 21, 02, 00001100b, "#", 07
 	X_DRAW_DINOSSAUR db                 00,  01,  02,02,  03,  04,04,  05,05,  06,06,  07
-	T_BEGIN_DRAW_DINOSSAUR db         00,  -1,  -01,1,  -1,  -1,03,  -1,03,  -1,03,  00
+	Y_BEGIN_DRAW_DINOSSAUR db         00,  -1,  -01,1,  -1,  -1,03,  -1,03,  -1,03,  00
 	TIMES_WRITE_Y_DRAW_DINOSSAUR db  04,  05,  01,03,  05,  03,01,  03,01,  03,01,  02
 	; Dinossaur (head)
 
@@ -61,7 +61,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	DRAW_DATA_BUSH1_ORIGINAL db 03, 0, 16, 200, 00001010b, "#", 03
 	DRAW_DATA_BUSH1 db 03, 0, 16, 200, 00001010b, "#", 03
 	X_DRAW_BUSH1 db                 00,  01,  02
-	T_BEGIN_DRAW_BUSH1 db         00,  00,  00
+	Y_BEGIN_DRAW_BUSH1 db         00,  00,  00
 	TIMES_WRITE_Y_DRAW_BUSH1 db  09,  09,  09
 	; Bug bush
 
@@ -69,7 +69,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	DRAW_DATA_BUSH2_ORIGINAL db 03, 0, 19, 140, 00001010b, "#", 03
 	DRAW_DATA_BUSH2 db 03, 0, 19, 140, 00001010b, "#", 03
 	X_DRAW_BUSH2 db                 00,  01,  02
-	T_BEGIN_DRAW_BUSH2 db         00,  00,  00
+	Y_BEGIN_DRAW_BUSH2 db         00,  00,  00
 	TIMES_WRITE_Y_DRAW_BUSH2 db  06,  06,  06
 	; Small bush
 
@@ -77,7 +77,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	DRAW_DATA_BIRD_ORIGINAL db 14, 0, 8, 80, 00001110b, "#", 14
 	DRAW_DATA_BIRD db 14, 0, 8, 80, 00001110b, "#", 14
 	X_DRAW_BIRD db                 00,  01,  02,  03,  04,  05,  06,  07,  08,  09,  10,  11,  12,  13
-	T_BEGIN_DRAW_BIRD db         00,  00,  -1,  -2,  01,  -5,  -4,  -2,  -2,  -1,  00,  00,  00,  00
+	Y_BEGIN_DRAW_BIRD db         00,  00,  -1,  -2,  01,  -5,  -4,  -2,  -2,  -1,  00,  00,  00,  00
 	TIMES_WRITE_Y_DRAW_BIRD db  01,  01,  02,  04,  01,  07,  07,  05,  05,  04,  02,  01,  01,  01
 	; Bird
 
@@ -88,7 +88,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 							 db                  28,28,28,  29,29,29,  30,30,30,  31,31,  32,32,  33,  34,  35,  36,  37,  38,  39,  40,40,  41,41,  42,42,  43,43,  44,  45,  46, 47,  48,  49,  50,  51,  52,  53
 							   db                      54,  55,  56,  57,57,57,  58,58,58,  59,59,59,  60,60,  61,61,  62,  63,  64,  65,65,  66,66,  67,67,  68,68,  69,69
 
-	T_BEGIN_DRAW_GAMEOVER db         02,  01,  00,05,  00,06,  00,06,  00,03,06,  00,03,  00,03,  01,  00,  02,  01,  00,04,  00,04,  00,04,  01,  02,  00,  00,  00,  01,  02,  01,  00,  00,  00,  00,  00
+	Y_BEGIN_DRAW_GAMEOVER db         02,  01,  00,05,  00,06,  00,06,  00,03,06,  00,03,  00,03,  01,  00,  02,  01,  00,04,  00,04,  00,04,  01,  02,  00,  00,  00,  01,  02,  01,  00,  00,  00,  00,  00
 									 db          00,03,06,  00,03,06,  00,03,06,  00,06,  00,06,  00,  00,  00,  00,  00,  01,  00,  00,06,  00,06,  00,06,  00,06,  00,  01,  00,  00,  00,  03,  04,  03,  00,  00
 									   db              00,  00,  00,  00,03,06,  00,03,06,  00,03,06,  00,06,  00,06,  00,  00,  00,  00,04,  00,04,  00,03,  00,05,  01,06
 
@@ -103,7 +103,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	X_DRAW_START db                 00,00,  01,01,  02,02,02,  03,03,03, 04,04,04,  05,05,  06,06,  07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17,17, 18,18, 19,19, 20, 21, 22, 23, 24
 						   db                   25,25, 26,26, 27,27, 28,28, 29,29, 30, 31, 32, 33, 34, 35, 36
 
-	T_BEGIN_DRAW_START db         01,05,  00,05,  00,03,06,  00,03,06, 00,03,06,  00,03,  01,04,  00, 00, 00, 00, 00, 00, 00, 00, 02, 01, 00,04, 00,04, 00,04, 01, 02, 00, 00, 00
+	Y_BEGIN_DRAW_START db         01,05,  00,05,  00,03,06,  00,03,06, 00,03,06,  00,03,  01,04,  00, 00, 00, 00, 00, 00, 00, 00, 02, 01, 00,04, 00,04, 00,04, 01, 02, 00, 00, 00
 								  db           00,04, 00,04, 00,03, 00,05, 01,06, 00, 00, 00, 00, 00, 00, 00
 
 	TIMES_WRITE_Y_DRAW_START db  02,01,  04,02,  01,01,01,  01,01,01, 01,01,01,  02,04,  01,02,  00, 02, 02, 07, 07, 02, 02, 00, 05, 06, 03,01, 02,01, 03,01, 06, 05, 00, 07, 07
@@ -117,7 +117,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 							  db                    30,  31,  32,  33,  34,34,  35,35,  36,36,  37,37,37,  38,38,  39,39,  40,  41,  42,  43,  44,44,  45,45,  46,46,  47,  48,  49,  50,  51,  52,  53,  54,  55,  56,  57
 							    db                     58,  59,  60,60,60,  61,61,61,  62,62,62,  63,63,  64,64
 
-	T_BEGIN_DRAW_DINO_GAME db         00,   00,  00,06,  00,06,  00,06,  01,05,  02,  00,  00,  00,  00,  00,  00,  01,  02,  03,  04,  00,  00,  00,  01,  00,  00,06,  00,06,  00,06,  00,06,  00,  01,  00,  00
+	Y_BEGIN_DRAW_DINO_GAME db         00,   00,  00,06,  00,06,  00,06,  01,05,  02,  00,  00,  00,  00,  00,  00,  01,  02,  03,  04,  00,  00,  00,  01,  00,  00,06,  00,06,  00,06,  00,06,  00,  01,  00,  00
 									  db            00,  00,  02,  01,  00,05,  00,06,  00,06,  00,03,06,  00,03,  00,03,  01,  00,  02,  01,  00,04,  00,04,  00,04,  01,  02,  00,  00,  00,  01,  02,  01,  00,  00,  00
 									    db             00,  00,  00,03,06,  00,03,06,  00,03,06,  00,06,  00,06
 
@@ -129,7 +129,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	; Dinossaur (head) - but on the main menu
 	DRAW_DATA_DINOSSAUR_MAIN_MENU db 36, 0, 16, 05, 10011111b, " ", 0
 	X_DRAW_DINOSSAUR_MAIN_MENU db                 00,   01,  02,02,  03,03,  04,04,  05,05,  06,  07,  08,  09,  10,  11,  12,  13,  14,  15,  16,  17,  18,  19,  20,  21,  22,22,  23,23,  24,24,  25,25,  26,  27
-	T_BEGIN_DRAW_DINOSSAUR_MAIN_MENU db         00,   00,  00,06,  00,06,  00,06,  01,05,  02,  00,  00,  00,  00,  00,  00,  01,  02,  03,  04,  00,  00,  00,  01,  00,  00,06,  00,06,  00,06,  00,06,  00,  01
+	Y_BEGIN_DRAW_DINOSSAUR_MAIN_MENU db         00,   00,  00,06,  00,06,  00,06,  01,05,  02,  00,  00,  00,  00,  00,  00,  01,  02,  03,  04,  00,  00,  00,  01,  00,  00,06,  00,06,  00,06,  00,06,  00,  01
 	TIMES_WRITE_Y_DRAW_DINOSSAUR_MAIN_MENU db  07,   07,  01,01,  01,01,  01,01,  01,01,  03,  00,  07,  07,  00,  07,  07,  01,  01,  01,  01,  07,  07,  00,  05,  07,  01,01,  01,01,  01,01,  01,01,  07,  05
 	; Dinossaur (head) - but on the main menu
 
@@ -139,7 +139,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	X_DRAW_GAME db                 00,  01,  02,02,  03,03,  04,04,  05,05,05,  06,06,  07,07,  08,  09,  10,  11,  12,12,  13,13,  14,14,  15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26,  27,  28,28,28
 						 db                    29,29,29,  30,30,30,  31,31,  32,32
 
-	T_BEGIN_DRAW_GAME db         02,  01,  00,05,  00,06,  00,06,  00,03,06,  00,03,  00,03,  01,  00,  02,  01,  00,04,  00,04,  00,04,  01,  02,  00,  00,  00,  01,  02,  01,  00,  00,  00,  00,  00,  00,03,06
+	Y_BEGIN_DRAW_GAME db         02,  01,  00,05,  00,06,  00,06,  00,03,06,  00,03,  00,03,  01,  00,  02,  01,  00,04,  00,04,  00,04,  01,  02,  00,  00,  00,  01,  02,  01,  00,  00,  00,  00,  00,  00,03,06
 								 db            00,03,06,  00,03,06,  00,06,  00,06
 
 	TIMES_WRITE_Y_DRAW_GAME db  03,  05,  02,02,  01,01,  01,01,  01,01,01,  01,04,  01,04,  01,  00,  05,  06,  03,01,  02,01,  03,01,  06,  05,  00,  07,  07,  02,  02,  02,  07,  07,  00,  07,  07,  01,01,01
@@ -366,7 +366,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 
 	CLEAR_SCREAN
 
-	LOAD_FIGURE_FUNCTION DRAW_DATA_START X_DRAW_START T_BEGIN_DRAW_START TIMES_WRITE_Y_DRAW_START
+	LOAD_FIGURE_FUNCTION DRAW_DATA_START X_DRAW_START Y_BEGIN_DRAW_START TIMES_WRITE_Y_DRAW_START
 	mov ax, 0
 	mov dl, 0
 	call DRAW_ERASE_FIGURE_MAIN
@@ -376,7 +376,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 	mov ah, 86h
 	int 15h
 
-	LOAD_FIGURE_FUNCTION DRAW_DATA_START X_DRAW_START T_BEGIN_DRAW_START TIMES_WRITE_Y_DRAW_START
+	LOAD_FIGURE_FUNCTION DRAW_DATA_START X_DRAW_START Y_BEGIN_DRAW_START TIMES_WRITE_Y_DRAW_START
 	mov ax, 0
 	mov dl, 1
 	call DRAW_ERASE_FIGURE_MAIN
@@ -428,7 +428,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		mov ah, 86h
 		int 15h
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR X_DRAW_DINOSSAUR T_BEGIN_DRAW_DINOSSAUR TIMES_WRITE_Y_DRAW_DINOSSAUR
+		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR X_DRAW_DINOSSAUR Y_BEGIN_DRAW_DINOSSAUR TIMES_WRITE_Y_DRAW_DINOSSAUR
 		mov ax, 0
 		mov dl, 0
 		call DRAW_ERASE_FIGURE_MAIN
@@ -474,7 +474,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		CLEAR_SCREAN
 
 		; Load the figure's drawing vectors to the vector of drawing data of the DRAW_ERASE_FIGURE function.
-		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR X_DRAW_DINOSSAUR T_BEGIN_DRAW_DINOSSAUR TIMES_WRITE_Y_DRAW_DINOSSAUR
+		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR X_DRAW_DINOSSAUR Y_BEGIN_DRAW_DINOSSAUR TIMES_WRITE_Y_DRAW_DINOSSAUR
 		; Copy the data from the original vetor back to the vector in use. Which means, reset the positions to the
 		; original ones of game. It's useful this is here too, because after a game, the values must be all reset.
 		COPY_ARRAY DRAW_DATA_DINO_ORIGINAL DRAW_DATA_DINOSSAUR 6
@@ -488,7 +488,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		COPY_ARRAY DRAW_DATA_DINO_ORIGINAL DRAW_DATA_DINOSSAUR 6
 		COPY_ARRAY JUMP_DATA_DINOSSAUR_ORIGINAL JUMP_DATA_DINOSSAUR 4
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH1 X_DRAW_BUSH1 T_BEGIN_DRAW_BUSH1 TIMES_WRITE_Y_DRAW_BUSH1
+		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH1 X_DRAW_BUSH1 Y_BEGIN_DRAW_BUSH1 TIMES_WRITE_Y_DRAW_BUSH1
 		COPY_ARRAY DRAW_DATA_BUSH1_ORIGINAL DRAW_DATA_BUSH1 6
 		lea bx, DRAW_DATA_BUSH1
 		mov byte ptr [bx+2], 5
@@ -498,7 +498,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		call DRAW_ERASE_FIGURE_MAIN
 		COPY_ARRAY DRAW_DATA_BUSH1_ORIGINAL DRAW_DATA_BUSH1 6
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH2 X_DRAW_BUSH2 T_BEGIN_DRAW_BUSH2 TIMES_WRITE_Y_DRAW_BUSH2
+		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH2 X_DRAW_BUSH2 Y_BEGIN_DRAW_BUSH2 TIMES_WRITE_Y_DRAW_BUSH2
 		COPY_ARRAY DRAW_DATA_BUSH2_ORIGINAL DRAW_DATA_BUSH2 6
 		lea bx, DRAW_DATA_BUSH2
 		mov byte ptr [bx+2], 8
@@ -508,7 +508,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		call DRAW_ERASE_FIGURE_MAIN
 		COPY_ARRAY DRAW_DATA_BUSH2_ORIGINAL DRAW_DATA_BUSH2 6
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_BIRD X_DRAW_BIRD T_BEGIN_DRAW_BIRD TIMES_WRITE_Y_DRAW_BIRD
+		LOAD_FIGURE_FUNCTION DRAW_DATA_BIRD X_DRAW_BIRD Y_BEGIN_DRAW_BIRD TIMES_WRITE_Y_DRAW_BIRD
 		COPY_ARRAY DRAW_DATA_BIRD_ORIGINAL DRAW_DATA_BIRD 6
 		lea bx, DRAW_DATA_BIRD
 		mov byte ptr [bx+2], 6
@@ -518,12 +518,12 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		call DRAW_ERASE_FIGURE_MAIN
 		COPY_ARRAY DRAW_DATA_BIRD_ORIGINAL DRAW_DATA_BIRD 6
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR_MAIN_MENU X_DRAW_DINOSSAUR_MAIN_MENU T_BEGIN_DRAW_DINOSSAUR_MAIN_MENU TIMES_WRITE_Y_DRAW_DINOSSAUR_MAIN_MENU
+		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR_MAIN_MENU X_DRAW_DINOSSAUR_MAIN_MENU Y_BEGIN_DRAW_DINOSSAUR_MAIN_MENU TIMES_WRITE_Y_DRAW_DINOSSAUR_MAIN_MENU
 		mov ax, 0
 		mov dl, 0
 		call DRAW_ERASE_FIGURE_MAIN
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_GAME X_DRAW_GAME T_BEGIN_DRAW_GAME TIMES_WRITE_Y_DRAW_GAME
+		LOAD_FIGURE_FUNCTION DRAW_DATA_GAME X_DRAW_GAME Y_BEGIN_DRAW_GAME TIMES_WRITE_Y_DRAW_GAME
 		mov ax, 0
 		mov dl, 0
 		call DRAW_ERASE_FIGURE_MAIN
@@ -591,7 +591,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		;and ax, 11111100b
 		;out 61h, ax
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_GAMEOVER X_DRAW_GAMEOVER T_BEGIN_DRAW_GAMEOVER TIMES_WRITE_Y_DRAW_GAMEOVER
+		LOAD_FIGURE_FUNCTION DRAW_DATA_GAMEOVER X_DRAW_GAMEOVER Y_BEGIN_DRAW_GAMEOVER TIMES_WRITE_Y_DRAW_GAMEOVER
 		call DRAW_ERASE_FIGURE
 
 		; Stop the song
@@ -850,19 +850,19 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 
 		; Here is the part of the function where the scenario is advanced a character to the right.
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH1 X_DRAW_BUSH1 T_BEGIN_DRAW_BUSH1 TIMES_WRITE_Y_DRAW_BUSH1
+		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH1 X_DRAW_BUSH1 Y_BEGIN_DRAW_BUSH1 TIMES_WRITE_Y_DRAW_BUSH1
 		mov ax, 0
 		mov al, -1
 		mov dl, 0
 		call DRAW_ERASE_FIGURE_MAIN
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH2 X_DRAW_BUSH2 T_BEGIN_DRAW_BUSH2 TIMES_WRITE_Y_DRAW_BUSH2
+		LOAD_FIGURE_FUNCTION DRAW_DATA_BUSH2 X_DRAW_BUSH2 Y_BEGIN_DRAW_BUSH2 TIMES_WRITE_Y_DRAW_BUSH2
 		mov ax, 0
 		mov al, -1
 		mov dl, 0
 		call DRAW_ERASE_FIGURE_MAIN
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_BIRD X_DRAW_BIRD T_BEGIN_DRAW_BIRD TIMES_WRITE_Y_DRAW_BIRD
+		LOAD_FIGURE_FUNCTION DRAW_DATA_BIRD X_DRAW_BIRD Y_BEGIN_DRAW_BIRD TIMES_WRITE_Y_DRAW_BIRD
 		mov ax, 0
 		mov al, -1
 		mov dl, 0
@@ -1032,7 +1032,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		cmp ax, 1
 		je JUMP_end
 
-		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR X_DRAW_DINOSSAUR T_BEGIN_DRAW_DINOSSAUR TIMES_WRITE_Y_DRAW_DINOSSAUR
+		LOAD_FIGURE_FUNCTION DRAW_DATA_DINOSSAUR X_DRAW_DINOSSAUR Y_BEGIN_DRAW_DINOSSAUR TIMES_WRITE_Y_DRAW_DINOSSAUR
 
 		; Check if the dinossaur is rising or falling.
 		mov al, byte ptr [bx+1]
@@ -1427,7 +1427,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 		; Format:
 		;	- Address of DRAW_DATA_DINOSSAUR;
 		;	- Address of X_DRAW_DINOSSAUR;
-		;	- Address of T_BEGIN_DRAW_DINOSSAUR;
+		;	- Address of Y_BEGIN_DRAW_DINOSSAUR;
 		;	- Address of TIMES_WRITE_Y_DRAW_DINOSSAUR;
 		;	- Write (0) or erase (1);
 		;	- [X] character to use to write (default: # - number sign); --> deprecated
@@ -1454,7 +1454,7 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
         ;         the numbers that are closer together [no idea what this means XD] are drawn on the same column -
         ;         they're drawing irregularities, like empty places)
 		; Note: the function draws from above to bottom (in each column, starts by the highest coordinate and draws down)
-		;T_BEGIN_DRAW_DINOSSAUR db         00,  -1,  -01,1,  -1,  -1,03,  -1,03,  -1,03,  00
+		;Y_BEGIN_DRAW_DINOSSAUR db         00,  -1,  -01,1,  -1,  -1,03,  -1,03,  -1,03,  00
 		; Format: number of characters to draw minus 1 (n-1), as of the initial coordinate defined on the array above
 		;TIMES_WRITE_Y_DRAW_DINOSSAUR db  03,  04,  00,02,  04,  02,00,  02,00,  02,00,  01
 		; Needed arrays
@@ -1498,8 +1498,8 @@ name "ProjF_AC" ; Deprecated as of MASM something, but EMU8086 is outdated (old 
 			mov al, [bx+1] ; --> DRAW_DATA_DINOSSAUR[1] // Current column in index
 			mov si, ax ; This is just to use the correct register to better understanding of the program (SI - Source INDEX / BX - Base ADDRESS)
 			mov dh, [bx+2] ; --> DRAW_DATA_DINOSSAUR[2] // Initial y coordinate
-			mov bx, DRAW_ERASE_FIGURE_data[2*2] ; --> T_BEGIN_DRAW_DINOSSAUR
-			add dh, [bx+si] ; --> T_BEGIN_DRAW_DINOSSAUR[bx] // Sum the initial coordinate with a number to know the coordinate where to start drawing the column
+			mov bx, DRAW_ERASE_FIGURE_data[2*2] ; --> Y_BEGIN_DRAW_DINOSSAUR
+			add dh, [bx+si] ; --> Y_BEGIN_DRAW_DINOSSAUR[bx] // Sum the initial coordinate with a number to know the coordinate where to start drawing the column
 			mov bx, DRAW_ERASE_FIGURE_data[2*3] ; --> TIMES_WRITE_Y_DRAW_DINOSSAUR // Address
 			add dh, [bx+si] ; --> TIMES_WRITE_Y_DRAW_DINOSSAUR[bx]
 			sub dh, cl ; Sum the coordinate where to start drawing the column with CL, to know in which current column position it's in
