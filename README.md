@@ -10,7 +10,7 @@ PS:
 - Pontos == Points
 
 ## Introduction
-This is a project for the Computer Architecture subject in the course of Electrical and Computer Engineering, coded in 2020.
+This is a project for the Computer Architecture course in the Electrical and Computer Engineering degree, coded in 2020.
 
 It's the Google Chrome's Dino Game, but coded for the Intel 8086 processor, 100% in Assembly. Game I'm talking about: https://chromedino.com/.
 It's not perfect, but I think it's pretty cool xD. Was very cool to make too haha. It has sound and plays I want to break free from Queen while you play. To play it, use DOSBox (use the settings file I provide if you'd want), and just run it normally like any other program or game. PS: it also tries to simulate gravity when the dinossaur jumps.
@@ -28,4 +28,4 @@ I'll also provide:
  - My DOSBox 0.71 settings to get the game running with sound
 
 ## License
-This project is licensed under Apache 2.0 License -  [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0).
+This project is licensed under the Apache 2.0 License -  [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0).
